@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Sum</title>
+    <script src="script.js" type="script"></script>
+  </head>
+  <body>
+    <script>
+
+    function populateDiv(){
+           const a = document.getElementById('num_a').value;
+           const b = document.getElementById('num_b').value;
+           let sum =  parseInt(a)+ parseInt(b);
+           const element = document.getElementById('finalSum');
+           element.innerHTML = 'TOTAL SUM :: '+sum;   
+    }
+      
+    </script>
+    <br>
+      <label for="num_a">Num a</label>
+      <input type="number" id="num_a"  name="num_a" />
+      <br></br>
+      
+      <label for="num_b">Num b</label>
+      <input type="number" id="num_b" name="num_b" />
+      <br></br>
+      
+      <button onclick="populateDiv()" id="calculateSum">Calculate sum</button>
+      
+      <div id="finalSum"></div>
+    </div>
+  </body>
+</html>
